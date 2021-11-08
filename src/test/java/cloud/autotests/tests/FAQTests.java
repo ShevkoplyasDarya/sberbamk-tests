@@ -1,6 +1,5 @@
 package cloud.autotests.tests;
 
-import cloud.autotests.helpers.DriverUtils;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Description;
@@ -19,7 +18,7 @@ public class FAQTests extends TestBase {
     @AllureId("5709")
     @Description("Test for empty request on FAQ page")
     @DisplayName("Test for empty request on FAQ page")
-    void EmptyRequestTest() {
+    void emptyRequestTest() {
         step("Open url 'https://www.sberbank.ru/ru/person/help'", () ->
                 open("https://www.sberbank.ru/ru/person/help"));
 
@@ -39,7 +38,7 @@ public class FAQTests extends TestBase {
     @AllureId("5708")
     @Description("Test for Debit card request on FAQ page")
     @DisplayName("Test for Debit card request on FAQ page")
-    void DebitCardRequestTest() {
+    void debitCardRequestTest() {
         step("Open url 'https://www.sberbank.ru/ru/person/help'", () ->
                 open("https://www.sberbank.ru/ru/person/help"));
 
@@ -64,7 +63,7 @@ public class FAQTests extends TestBase {
     @AllureId("5729")
     @Description("Test for Credit card request on FAQ page")
     @DisplayName("Test for Credit card request on FAQ page")
-    void CreditCardRequestTest() {
+    void creditCardRequestTest() {
         step("Open url 'https://www.sberbank.ru/ru/person/help'", () ->
                 open("https://www.sberbank.ru/ru/person/help"));
 
